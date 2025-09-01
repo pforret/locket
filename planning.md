@@ -9,9 +9,9 @@
 
 - [ ] Build web GUI to add a new URL and optional title + tags
       Only the URL is asked first, then the app fetches title in the background. The title is then added as a second field that can be edited, along with tags.
-- [ ] Run the content extraction, summary extraction, image extraction, screenshot creator as separate queued jobs
 - [ ] Build command line artisan command to add a new URL 
       Only the URL is asked first, then the app fetches title in the background. The title is then added as a second field that can be edited, along with tags
+- [ ] Run the content extraction, summary extraction, image extraction, screenshot creator as separate queued jobs
 - [ ] Build API endpoint to add a new URL and optional title + tags
 - [ ] Build bookmarklet to add current page URL to the app
 - [ ] Build email integration to add URLs by sending an email to a special address
