@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "/Users/pforret/Library/Application Support/Herd/bin/php83",
+            "args": [
+                "/Users/pforret/Code/laravel/locket/artisan",
+                "boost:mcp"
+            ]
+        }
+    }
+}
