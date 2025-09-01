@@ -12,7 +12,7 @@ Key features (from README.md):
 - Convert content to Markdown using spatie/html-to-markdown
 - AI-powered summaries and keywords
 - Tag organization using spatie/laravel-tags
-- Multiple input methods: web GUI, API, CLI, bookmarklet, email, RSS feeds
+- Multiple input methods: web GUI, API, CLI, bookmarklet, email, RSS feeds, webhook
 
 ## Technology Stack
 
@@ -48,88 +48,6 @@ Key features (from README.md):
 - Type-safe routing via Laravel Wayfinder with generated TypeScript actions
 - Composables in `resources/js/composables/`
 
-## Development Commands
-
-**Setup:**
-```bash
-composer install
-npm install
-cp .env.example .env
-php artisan key:generate
-touch database/database.sqlite
-php artisan migrate
-```
-
-**Development:**
-```bash
-composer dev          # Starts all services (server, queue, logs, vite)
-composer dev:ssr      # Development with SSR
-npm run dev           # Vite dev server only
-php artisan serve     # Laravel server only
-```
-
-**Code Quality:**
-```bash
-npm run lint          # ESLint with auto-fix
-npm run format        # Prettier formatting
-npm run format:check  # Check formatting without fixing
-./vendor/bin/pint     # Laravel Pint (PHP CS Fixer)
-```
-
-**Testing:**
-```bash
-composer test         # Run all tests (clears config first)
-php artisan test      # Run tests directly
-```
-
-**Build:**
-```bash
-npm run build         # Production build
-npm run build:ssr     # Production build with SSR
-```
-
-## Key Conventions
-
-**PHP:**
-- Uses Laravel 12 conventions
-- Pest testing framework (not PHPUnit syntax)
-- Laravel Pint for code style
-- Controller actions return Inertia responses
-
-**Vue/TypeScript:**
-- Strict TypeScript configuration
-- Component composition API preferred
-- Props and emits fully typed
-- Use Reka UI components following shadcn/ui patterns
-- Import aliases: `@/*` maps to `resources/js/*`
-
-**Styling:**
-- Tailwind CSS v4 with official Vite plugin
-- Custom component variants via class-variance-authority
-- Responsive design patterns throughout
-
-**Routing:**
-- Laravel Wayfinder generates type-safe client-side routing
-- Actions generated in `resources/js/actions/` mirror PHP controller structure
-- Route model binding used where appropriate
-
-## Environment Configuration
-
-- Default database: SQLite (`database/database.sqlite`)
-- Queue driver: database
-- Cache driver: database  
-- Mail driver: log (development)
-- Session driver: database
-
-## Testing Strategy
-
-- Pest framework with Laravel plugin
-- Feature tests for auth flows and settings
-- Unit tests for utilities
-- Database uses in-memory SQLite for testing
-- Tests located in `tests/Feature/` and `tests/Unit/`
-
-===
 
 <laravel-boost-guidelines>
 === foundation rules ===
