@@ -9,7 +9,7 @@ This is "Locket" - a Laravel alternative to Pocket (getpocket.com) for saving, o
 Key features (from README.md):
 - Save URLs with metadata extraction (title, author, images, content)
 - Generate preview images using spatie/browsershot
-- Convert content to Markdown using spatie/html-to-markdown
+- Convert content to Markdown using league/html-to-markdown
 - AI-powered summaries and keywords
 - Tag organization using spatie/laravel-tags
 - Multiple input methods: web GUI, API, CLI, bookmarklet, email, RSS feeds, webhook
